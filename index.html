@@ -11,10 +11,10 @@
 	<header>
 		<nav>
 			<ul>
-				<li><a href="#about">About me</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#tools">Tools</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a class="navbar" href="#about">About me</a></li>
+				<li><a class="navbar" href="#projects">Projects</a></li>
+				<li><a class="navbar" href="#tools">Tools</a></li>
+				<li><a class="navbar" href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -22,12 +22,13 @@
 		<section id="main">
 			<img src="./me.jpg" alt="">
 			<h1>Maksymilian Potok</h1>
-			<a class="move" href="#about">about me</a>
+			<button class="btnmove" onclick="location.href='#about'">about me</button>
+			<!--<a class="move" href="#about">about me</a>-->
 		</section>
 		<section id="about">
-			<p>Hi! I'm a Junior Front-End / Python developer currently looking for employment. Will also accept internship or entry-level position if it's necessary.
-			My technical experience revolves around Python, Bash, HTML5, CSS, JavaScript, PHP, MySQL and basic Java. I'm also familiar with Django and essentials of DevOps practices.</p>
-			<a class="move" href="#projects">check my projects!</a>
+			<p>Junior Front-End / Python developer currently looking for employment. My technical experience revolves around Python, Bash, HTML5, CSS, JavaScript, PHP, MySQL and basic Java. I'm also familiar with Django and essentials of DevOps practices.</p>
+			<button class="btnmove" onclick="location.href='#projects'">check my projects!</button>
+			<!--<a class="move" href="#projects">check my projects!</a>-->
 		</section>
 		<section id="projects">
 			<h2>main projects</h2>
@@ -36,25 +37,29 @@
 			<a class="projects" href="https://github.com/maxpotok/scrapechan" target="_blank">scrapechan (python)</a>
 			<a class="projects" href="https://github.com/maxpotok/jpegedit" target="_blank">jpegedit (python/bash)</a>
 			<p>more at my <a href="https://github.com/maxpotok/" target="_blank">GitHub&nbsp;<img src="./github.png" alt=""></a></p>
-			<a class="move" href="#tools">tools i use</a>
+			<button class="btnmove" onclick="location.href='#tools'">tools i use</button>
+			<!--<a class="move" href="#tools">tools i use</a>-->
 		</section>
 		<section id="tools">
 			<h2>my tools</h2>
-			<p>Here's a list of my daily setup.</p>
+			<p>My daily setup.</p>
 			<ol>
 				<li>OS: Ubuntu 20.04, Windows 10</li>
 				<li>IDE: Sublime Text, PyCharm</li>
 				<li>Graphics: GIMP, Krita</li>
 				<li>Video: Vegas Pro, FFMPEG</li>
 			</ol>
-			<a class="move" href="#contact">contact me!</a>
+			<button class="btnmove" onclick="location.href='#contact'">contact me</button>
+			<!--<a class="move" href="#contact">contact me!</a>-->
 		</section>
 		<section id="contact">
 			<h2>contact me via</h2>
 			<a href="mailto:makspotok@gmail.com" target="_blank">e-mail</a>
 			<a href="https://t.me/tryptamines" target="_blank">telegram</a>
 			<a href="https://www.linkedin.com/in/maksymilianpotok/" target="_blank">linkedin</a>
-			<p><a class="move" href="#">back to the top</a></p>
+			<br>
+			<p><button class="btnmove" onclick="location.href='#'">back to the top</button></p>
+			<!--<p><a class="move" href="#">back to the top</a></p>-->
 		</section>
 	</main>
 </body>
