@@ -11,7 +11,7 @@ body {
 	font-size: 2em;
 }
 
-h2 {
+h1, h2 {
 	text-align: center;
 }
 
@@ -23,7 +23,7 @@ img {
 }
 
 section {
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -41,7 +41,7 @@ ul {
 	background: #191919;
 	margin: 0;
 	padding: 0;
-	position: fixed;
+	position: absolute;
 	top: -10000px;
 	left: -10000px;
 	letter-spacing: 0;
@@ -51,6 +51,8 @@ ul {
 
 ul li {
 	list-style: none;
+	text-align: center;
+  	display: contents;
 }
 
 .navbar {
@@ -65,11 +67,12 @@ ul li {
 }
 
 a {
+	transition: color 0.5s ease;
 	color: #fffa65;
 }
 
 a:hover {
-	color: #fff200;
+	color: #ffa800;
 }
 
 .btnmove {
@@ -106,6 +109,7 @@ a:hover {
 
 @media only screen and (min-width: 480px) {
 	ul {
+		position: sticky;
 		top: 0;
 		left: 0;
 	}
