@@ -1,0 +1,121 @@
+* {
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+	font-size: 2em;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+img {
+	max-width: 200px;
+	max-height: 200px;
+	border: 1px solid #191919;
+	border-radius: 50%;
+}
+
+section {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+section:nth-child(odd) {
+	background: #191919;
+	color: white;
+}
+
+ul {
+	width: 100%;
+	height: 50px;
+	background: #191919;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: -10000px;
+	left: -10000px;
+	letter-spacing: 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+ul li {
+	list-style: none;
+	text-align: center;
+  	display: contents;
+}
+
+.navbar {
+	transition: color 0.5s ease;
+	color: white;
+	line-height: 50px;
+	box-sizing: border-box;
+}
+
+.navbar:hover {
+	color: #b28dae;
+}
+
+a {
+	transition: color 0.5s ease;
+	color: #fffa65;
+}
+
+a:hover {
+	color: #ffa800;
+}
+
+.btnmove {
+	width: 160px;
+	height: 50px;
+	color: #191919;
+	transition: background-color 0.5s ease;
+	background: white;
+	border: 1px solid;
+	border-radius: 10px;
+}
+
+.btnmove:hover {
+	width: 160px;
+	height: 50px;
+	color: white;
+	background: #191919;
+	border-radius: 10px;
+}
+
+.btnmove:nth-child(odd) {
+	color: white;
+	background: #191919;
+}
+
+.btnmove:hover:nth-child(odd) {
+	color: #191919;
+	background: white;
+}
+
+#about {
+	text-align: justify;
+}
+
+@media only screen and (min-width: 480px) {
+	ul {
+		position: sticky;
+		top: 0;
+		left: 0;
+	}
+
+	#about {
+		font-size: 1.5em;
+		padding: 0 12% 0;
+	}
+}
